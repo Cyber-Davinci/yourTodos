@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import { PlusSmIcon } from '@heroicons/react/solid'
+import {v4 as uuidv4} from "uuid";
 
 
 function AddTodo({addTodo}) {
@@ -17,7 +18,7 @@ function AddTodo({addTodo}) {
   const handleSubmit = (e) =>{
     e.preventDefault()
     if(todo.todoTask.trim()){
-      addTodo({...todo})
+      addTodo({...todo, id:uuidv4()})
 
       setTodo({...todo, todoTask:""})
     }
