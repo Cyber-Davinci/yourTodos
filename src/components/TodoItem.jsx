@@ -29,7 +29,7 @@ function TodoItem({ todo, toggleComplete, deleteTodo }) {
 
   return (
     <div>
-      <li className="border rounded-lg p-3 relative mt-4 shadow-xl md:w-auto ">
+      <li className="border rounded-lg p-3 relative mt-4 shadow-xl md:w-auto bg-white">
         <div className="flex">
           {todo.completed ? (
             <ClipboardCheckIcon className=" text-green-600 text-sm md:w-10 w-8" />
