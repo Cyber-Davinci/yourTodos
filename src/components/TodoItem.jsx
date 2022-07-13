@@ -20,7 +20,7 @@ function TodoItem({ todo, toggleComplete, deleteTodo }) {
   let month = months[d.getMonth()];
 
   const handleToggleComplete = () => {
-    toggleComplete(todo);
+    toggleComplete(todo.id);
   };
 
   const handleDeleteTodo = () => {
