@@ -16,6 +16,10 @@ function App() {
     }
   }, []);
 
+  useEffect(()=>{
+    localStorage.setItem(STORED_TODOS_KEY, JSON.stringify(todos))
+  },[todos])
+
   const addTodo = (todo) => {
     setTodos([todo, ...todos]);
   };
