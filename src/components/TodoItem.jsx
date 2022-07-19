@@ -28,8 +28,8 @@ function TodoItem({ todo, toggleComplete, deleteTodo }) {
   };
 
   return (
-    <div>
-      <li className="border rounded-lg p-3 relative mt-4 shadow-xl md:w-auto bg-white">
+    <div className="">
+      <li className={`border rounded-lg p-3 relative mt-4 shadow-xl w-auto bg-white md:w-[600px] ${todo.completed ? "opacity-40 bg-slate-800 text-white line-through" : "opacity-100"}`}>
         <div className="flex">
           {todo.completed ? (
             <ClipboardCheckIcon className=" text-green-600 text-sm md:w-10 w-8" />
