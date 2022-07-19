@@ -43,7 +43,7 @@ function App() {
     <div className=" ">
       <div className="mx-3  md:mx-14 md:mt-20 mt-10 h-auto ">
         <div className="text-center">
-          <h2 className="text-2xl font-semibold text-blue-500">TodoZ</h2>
+          <h2 className="text-3xl text-green-600"><span className="font-semibold text-purple-600">YOUR</span> TodoZ</h2>
         </div>
         <AddTodo addTodo={addTodo} />
         <Todos
