@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
-import {  PaperAirplaneIcon } from '@heroicons/react/solid'
+import {  PaperAirplaneIcon } from '@heroicons/react/outline'
 import {v4 as uuidv4} from "uuid";
 
 
