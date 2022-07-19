@@ -4,11 +4,13 @@ import TodoItem from './TodoItem'
 function Todos({todos, toggleComplete, deleteTodo}) {
   
   return (
-    <ul className=' h-[600px] flex flex-col md:justify-center md:items-center mt-6 pt-[150px] overflow-y-auto'>
+    <div className='flex justify-center  overflow-hidden'>
+    <ul className='mt-6 overflow-y-auto h-[600px] overflow-x-hidden'>
         { todos.map((todo,index)=> (
             <TodoItem todo={todo} key={index} toggleComplete={toggleComplete} deleteTodo={deleteTodo} />
         ))}
     </ul>
+    </div>
   )
 }
 

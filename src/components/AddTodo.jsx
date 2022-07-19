@@ -25,7 +25,7 @@ function AddTodo({addTodo}) {
   }
 
   return (
-    <div className={`md:fixed md:bottom-36 md:left-0 md:right-0`}>
+    <div className={`md:fixed md:bottom-14 md:left-0 md:right-0`}>
         <form onSubmit={handleSubmit}>
           <div className='flex mx-auto justify-center mt-8'>
           <input className='border-b rounded-lg rounded-tr-none rounded-br-none pl-3 w-[400px] md:w-[600px] md:h-16 h-12 outline-none md:text-xl' type="text" placeholder='add new todo...'  
