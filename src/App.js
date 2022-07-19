@@ -45,12 +45,13 @@ function App() {
         <div className="text-center">
           <h2 className="text-2xl font-semibold text-blue-500">TodoZ</h2>
         </div>
+        <AddTodo addTodo={addTodo} />
         <Todos
           todos={todos}
           toggleComplete={toggleComplete}
           deleteTodo={deleteTodo}
         />
-        <AddTodo addTodo={addTodo} />
+
 
 
       </div>
