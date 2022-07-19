@@ -41,7 +41,7 @@ function App() {
 
   return (
     <div className=" ">
-      <div className="mx-3  md:mx-14 md:mt-20 mt-10 h-auto min-h-full ">
+      <div className="mx-3  md:mx-14 md:mt-20 mt-10  h-auto min-h-full ">
         <div className="text-center">
           <h2 className="text-2xl font-semibold text-blue-500">TodoZ</h2>
         </div>
